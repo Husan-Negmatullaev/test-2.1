@@ -1,0 +1,77 @@
+%ic {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+
+._icon-flipchart:before {
+  content: "\e900";
+}
+._icon-glasses:before {
+  content: "\e901";
+}
+._icon-group:before {
+  content: "\e902";
+}
+._icon-hat:before {
+  content: "\e903";
+}
+._icon-hourglass:before {
+  content: "\e904";
+}
+._icon-lightbulb-14:before {
+  content: "\e905";
+}
+._icon-list:before {
+  content: "\e906";
+}
+._icon-location:before {
+  content: "\e907";
+}
+._icon-mail:before {
+  content: "\e908";
+}
+._icon-phone:before {
+  content: "\e909";
+}
+._icon-purse:before {
+  content: "\e90a";
+}
+._icon-speaker:before {
+  content: "\e90b";
+}
+._icon-teacher:before {
+  content: "\e90c";
+}
+._icon-timer:before {
+  content: "\e90d";
+}
+._icon-beaker:before {
+  content: "\e90e";
+}
+._icon-book:before {
+  content: "\e90f";
+}
+._icon-brain:before {
+  content: "\e910";
+}
+._icon-calendar:before {
+  content: "\e911";
+}
+._icon-cup:before {
+  content: "\e912";
+}
+._icon-discount:before {
+  content: "\e913";
+}
