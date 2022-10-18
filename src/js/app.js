@@ -12,7 +12,7 @@
 */
 
 // Включить/выключить FLS (Full Logging System) (в работе)
-window['FLS'] = true;
+window['FLS'] = false;
 
 // Подключение основного файла стилей
 import "../scss/style.scss";
@@ -135,13 +135,11 @@ import * as flsForms from "./files/forms/forms.js";
 // import './files/scroll/simplebar.js';
 
 // Ленивая (отложенная) загрузка картинок
-// Документация по работе в шаблоне: https://template.fls.guru/template-docs/modul-lenivaya-podgruzka-lazy-loading.html
 // Документация плагина: https://github.com/verlok/vanilla-lazyload
 // Сниппет(HTML):
 // import './files/scroll/lazyload.js';
 
 // Наблюдатель за объектами c атрибутом data-watch
-// Документация: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
 // Сниппет(HTML):
 // import './libs/watcher.js'
 
@@ -149,11 +147,9 @@ import * as flsForms from "./files/forms/forms.js";
 import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавная навигация по странице
-// Документация: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
 // flsScroll.pageNavigation();
 
 // Функционал добавления классов к хедеру при прокрутке
-// Документация: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
 // flsScroll.headerScroll();
 
 // Функционал липкого блока
@@ -174,7 +170,6 @@ import * as flsScroll from "./files/scroll/scroll.js";
 // ========================================================================================================================================================================================================================================================
 
 /* Динамический адаптив */
-// Документация: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
 // import "./libs/dynamic_adapt.js";
 
 /* Форматирование чисел */
