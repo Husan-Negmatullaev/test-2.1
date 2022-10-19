@@ -1,5 +1,6 @@
 
 import fs from 'fs';
+import { deleteAsync } from 'del';
 export const gitignore = () => {
   if (!fs.existsSync('.gitignore')) {
     fs.writeFile('./.gitignore', '', cb);
@@ -13,7 +14,7 @@ export const gitignore = () => {
     fs.appendFile('./.gitignore', app.buildFolder + '\r\n', cb);
     fs.appendFile('./.gitignore', '**/*.zip\r\n', cb);
     fs.appendFile('./.gitignore', '**/*.rar\r\n', cb);
-    if (projectName !== 'flsStart') del('./.git/');
+    if (projectName !== 'flsStart') deleteAsync('./.git/');
   }
   return app.gulp.src(`${app.path.srcFolder}`);
 }

@@ -1,150 +1,326 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Верстка «NEW_PROJECT_NAME»</title>
-	</head>
-	<body>
-		<div class="rootpage">
-			<h1>Верстка «NEW_PROJECT_NAME»</h1>
-			<div class="rootpage__info">
-				Особенности проекта
-			</div>
-			<h2>Готовые страницы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Главная</a></li>
-			</ol>
-			<h2>Попапы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html#"></a></li>
-			</ol>
-			<div class="rootpage__tnx">
-				<h2>Спасибо за заказ!</h2>
-				<p>Буду рад хорошему отзыву.</p>
-				<p>Обращайтесь еще!</p>
-			</div>
-			<div class="rootpage__contacts">
-				<h2>Мои контакты:</h2>
-				<p>Почта: <a href="mailto:email@gmail.com">husannegmatullaev21@gmail.com</a></p>
-				<p>Телефон: <a href="tel:998972190547">+998 (97) 219 05 47</a></p>
-				<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
-			</div>
-		</div>
-	</body>
-	<style>
-		@charset "UTF-8";
-		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-		* ,*::before, *::after {
-			padding: 0px;
-			margin: 0px;
-			border: 0px;
-			box-sizing: border-box; 
-		}
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-			min-width: 320px;
-			width: 100%;
-			color: #fff;
-			background-color: #5e5373;
-		}
-		body {
-			font-family: Montserrat;
-			font-size: 100%;
-			line-height: 1;
-			font-size: 1rem;
-		}
-		a {
-			text-decoration: underline;
-			color: #ebe691
-		}
-		a:visited {
-			text-decoration: underline;
-			color: #aaa768;
-		}
-			a:hover {
-			text-decoration: none;
-		}
-		ul li {
-			list-style: none;
-		}
-		img {
-			vertical-align: top;
-		}
-		.wrapper {
-			width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-		}
-		.rootpage{
-			padding: 30px;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-		}
-		@media (max-width: 767px) {
-			.rootpage{
-				padding:30px 15px;
-			}
-		}
-		h1 {
-			color: #ebe691;
-			font-size: 2.5rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-		@media (max-width: 767px) {
-			h1 {
-				font-size: 1.85rem;
-				margin: 0px 0px 1.25rem 0px;
-			}
-		}
-		h2 {
-			color: #ebe691;
-			font-size: 1.25rem;
-			margin: 0px 0px 1rem 0px;
-		}
-		@media (max-width: 767px) {
-			 h2 {
-				font-size: 1.125rem;
-				margin: 0px 0px 1rem 0px;
-			}
-		}
-		.rootpage__info{
-			line-height: 140%;
-			margin: 0px 0px 1.5rem 0px;
-		}
-
-		.rootpage__list{
-			margin: 0px 0px 2.25rem 1.25rem;
-		}
-		.rootpage__list li:not(:last-child){
-			margin: 0px 0px 15px 0px;
-		}
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius: 200px;
-			padding: 20px 65px;
-			line-height: 140%;
-		}
-		@media (max-width: 767px){
-		.rootpage__contacts,
-		.rootpage__tnx{
-			border-radius:40px;
-			padding: 20px;
-		}
-		}
-		.rootpage__contacts{
-			background: #32b5a4;
-			
-		}
-		.rootpage__contacts a{
-			color: #ebe691;
-		}
-		.rootpage__tnx{
-			background: #c22d63;
-			margin: 0px 0px 1rem 0px;
-		}
-	</style>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <section class="page__blogs blogs">
+          <div class="blogs__container">
+            <div class="blogs__body">
+              <article class="blogs__blog-item item-blog">
+                <div class="item-blog__body">
+                  <a href="#" class="item-blog__image-ibg">
+                    <img data-src="@img/blogs/01.png" alt="" />
+                    <div class="item-blog__types">
+                      <span class="item-blog__type-label">Новинка</span>
+                    </div>
+                  </a>
+                  <div class="item-blog__content">
+                    <div class="item-blog__header">
+                      <h4 class="item-blog__title">
+                        АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off
+                        2019
+                      </h4>
+                      <div class="item-blog__time _icon-clock">2 часа</div>
+                    </div>
+                    <ul class="item-blog__list">
+                      <li class="item-blog__list-item">
+                        <span>Билет на целый день</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Неограниченное число катаний</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>6 остановок у главных достопримечательностей</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Ближайший рейс сегодня</span>
+                        <div class="item-blog-showmore">
+                          <ul class="item-blog-showmore__content">
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="item-blog__price-block">
+                      <div class="item-blog__price-content">
+                        <div class="item-blog__price-value">900</div>
+                        <div class="item-blog__price-pier">
+                          <span class="_icon-ruble"> 1200 </span>
+                          на причале
+                        </div>
+                      </div>
+                      <a href="#" class="button">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="blogs__blog-item item-blog">
+                <div class="item-blog__body">
+                  <a href="#" class="item-blog__image-ibg">
+                    <img data-src="@img/blogs/03.png" alt="" />
+                    <div class="item-blog__types">
+                      <span class="item-blog__type-label">КРУГЛЫЙ ГОД</span>
+                    </div>
+                  </a>
+                  <div class="item-blog__content">
+                    <div class="item-blog__header">
+                      <h4 class="item-blog__title">
+                        АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off
+                        2019
+                      </h4>
+                      <div class="item-blog__time _icon-clock">2 часа</div>
+                    </div>
+                    <ul class="item-blog__list">
+                      <li class="item-blog__list-item">
+                        <span>Билет на целый день</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Неограниченное число катаний</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>6 остановок у главных достопримечательностей</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Ближайший рейс сегодня</span>
+                        <div class="item-blog-showmore">
+                          <ul class="item-blog-showmore__content">
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="item-blog__price-block">
+                      <div class="item-blog__price-content">
+                        <div class="item-blog__price-value">900</div>
+                        <div class="item-blog__price-pier">
+                          <span class="_icon-ruble">1200</span>
+                          на причале
+                        </div>
+                      </div>
+                      <a href="#" class="button">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="blogs__blog-item item-blog">
+                <div class="item-blog__body">
+                  <a href="#" class="item-blog__image-ibg">
+                    <img data-src="@img/blogs/02.png" alt="" />
+                    <div class="item-blog__types">
+                      <span class="item-blog__type-label item-blog__type-label_blue">Новинка</span>
+                    </div>
+                  </a>
+                  <div class="item-blog__content">
+                    <div class="item-blog__header">
+                      <h4 class="item-blog__title">
+                        АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off
+                        2019
+                      </h4>
+                      <div class="item-blog__time _icon-clock">2 часа</div>
+                    </div>
+                    <ul class="item-blog__list">
+                      <li class="item-blog__list-item">
+                        <span>Билет на целый день</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Неограниченное число катаний</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>6 остановок у главных достопримечательностей</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Ближайший рейс сегодня</span>
+                        <div class="item-blog-showmore">
+                          <ul class="item-blog-showmore__content">
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="item-blog__price-block">
+                      <div class="item-blog__price-content">
+                        <div class="item-blog__price-value">900</div>
+                        <div class="item-blog__price-pier">
+                          <span class="_icon-ruble">1200</span>
+                          на причале
+                        </div>
+                      </div>
+                      <a href="#" class="button">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="blogs__blog-item item-blog">
+                <div class="item-blog__body">
+                  <a href="#" class="item-blog__image-ibg item-blog__image-ibg_big">
+                    <img data-src="@img/blogs/01.png" alt="" />
+                    <div class="item-blog__types item-blog__types_top">
+                      <span class="item-blog__type-label item-blog__type-label_purple">
+                        Новинка
+                      </span>
+                    </div>
+                  </a>
+                  <div class="item-blog__content">
+                    <div class="item-blog__header">
+                      <h4 class="item-blog__title">
+                        АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off
+                        2019
+                      </h4>
+                      <div class="item-blog__time _icon-clock">2 часа</div>
+                    </div>
+                    <ul class="item-blog__list">
+                      <li class="item-blog__list-item">
+                        <span>Билет на целый день</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Неограниченное число катаний</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>6 остановок у главных достопримечательностей</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Ближайший рейс сегодня</span>
+                        <div class="item-blog-showmore">
+                          <ul class="item-blog-showmore__content">
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="item-blog__price-block">
+                      <div class="item-blog__price-content">
+                        <div class="item-blog__price-value">2900</div>
+                        <div class="item-blog__price-pier">
+                          <span class="_icon-ruble">1200</span>
+                          на причале
+                        </div>
+                      </div>
+                      <a href="#" class="button button_min-radius">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="blogs__blog-item item-blog">
+                <div class="item-blog__body">
+                  <a href="#" class="item-blog__image-ibg">
+                    <img data-src="@img/blogs/04.png" alt="" />
+                  </a>
+                  <div class="item-blog__content">
+                    <div class="item-blog__header">
+                      <h4 class="item-blog__title">
+                        АКЦИЯ - Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off
+                        2019
+                      </h4>
+                      <div class="item-blog__time _icon-clock">2 часа</div>
+                    </div>
+                    <ul class="item-blog__list">
+                      <li class="item-blog__list-item">
+                        <span>Билет на целый день</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Неограниченное число катаний</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>6 остановок у главных достопримечательностей</span>
+                      </li>
+                      <li class="item-blog__list-item">
+                        <span>Ближайший рейс сегодня</span>
+                        <div class="item-blog-showmore">
+                          <ul class="item-blog-showmore__content">
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                            <li>
+                              <button type="button" class="item-blog-showmore__btn">12:00</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="item-blog__price-block">
+                      <div class="item-blog__price-content">
+                        <div class="item-blog__price-value">2900</div>
+                        <div class="item-blog__price-pier">
+                          <span class="_icon-ruble">1200</span>
+                          на причале
+                        </div>
+                      </div>
+                      <a href="#" class="button button_min-radius">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>
